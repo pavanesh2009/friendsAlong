@@ -1,0 +1,40 @@
+<!doctype html>
+<html ng-app="myApp">
+  <head>
+    <!--<script src="http://getbootstrap.com/2.3.2/assets/js/bootstrap-dropdown.js"></script>
+    <script src="http://rawgithub.com/SlexAxton/messageformat.js/master/messageformat.js"></script>
+    <script src="http://rawgithub.com/SlexAxton/messageformat.js/master/locale/de.js"></script>-->
+    <script src="http://code.angularjs.org/1.1.5/angular.min.js"></script>
+    <!--<script src="http://rawgithub.com/angular/bower-angular-cookies/master/angular-cookies.min.js"></script>-->
+    <script src="translate.js"></script>
+    <!--<script src="http://rawgithub.com/PascalPrecht/bower-angular-translate-interpolation-messageformat/master/angular-translate-interpolation-messageformat.min.js"></script>
+    <script src="http://rawgithub.com/PascalPrecht/bower-angular-translate-storage-cookie/master/angular-translate-storage-cookie.min.js"></script>
+    <script src="http://rawgithub.com/PascalPrecht/bower-angular-translate-storage-local/master/angular-translate-storage-local.min.js"></script>
+    <script src="http://rawgithub.com/PascalPrecht/bower-angular-translate-loader-static-files/master/angular-translate-loader-static-files.min.js"></script>
+    <script src="http://rawgithub.com/PascalPrecht/bower-angular-translate-handler-log/master/angular-translate-handler-log.min.js"></script>-->
+    <!--<script src="angular-translate-handler-log.js"></script>-->
+    <script src="app.js"></script>
+    <script src="log4javascript_uncompressed.js"></script>
+
+<script type="text/javascript">
+   var log = log4javascript.getDefaultLogger();
+</script>
+
+  </head> 
+  <body>
+
+<div ng-controller="Ctrl">
+  <h2 translate="Pavanesh_NOT_Exist"></h3>
+  <p translate="Soni_Also_NOT_Exist"></p>
+  
+  <p>{{ missedTextKey }}</p>
+  <!-- Test if translation is working? -->
+   <p translate="HEADLINE"></p>
+
+  <button ng-click="changeLanguage('de')" translate="BUTTON_LANG_DE"></button>
+  <button ng-click="changeLanguage('en')" translate="BUTTON_LANG_EN"></button>
+</div> 
+
+
+  </body>
+</html>
